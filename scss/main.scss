@@ -1,0 +1,56 @@
+@import '_normalize';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+// === Variables ===
+
+:root{
+	--data-color-white: #fff;
+	--data-color-black: #000;
+}
+
+$white: var(--data-color-white);
+$black: var(--data-color-black);
+
+// === ---------------- ===
+
+// === Common ===
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: $white;
+}
+
+// === ---------------- ===
+
+// === Card ===
+
+.card {
+	width: 380px;
+	height: 226px;
+	border-radius: 20px;
+
+	padding: 30px;
+
+	background: url('../img/bg-1.jpg') center no-repeat;
+	background-size: cover;
+
+	background-color: pink;
+
+	&__logo {
+		height: 30px;
+
+		img {
+			height: 100%;
+		}
+	}
+}
+
+.content {
+	background: pink;
+}
+
+
+
+// === ---------------- ===
