@@ -104,14 +104,62 @@ body {
   color: var(--data-color-white);
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+
 .card {
   width: 380px;
   height: 226px;
   border-radius: 20px;
   padding: 30px;
-  background: url("../img/bg-1.jpg") center no-repeat;
+  margin-right: 30px;
+  margin-bottom: 30px;
   background-size: cover;
-  background-color: pink;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card-1 {
+  background-image: url("../img/bg-1.jpg");
+}
+
+.card-2 {
+  background-image: url("../img/bg-2.jpg");
+}
+
+.card-3 {
+  background-image: url("../img/bg-3.jpg");
+}
+
+.card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .card__logo {
@@ -122,6 +170,57 @@ body {
   height: 100%;
 }
 
-.content {
-  background: pink;
+.card__logo--visa {
+  height: 24px;
+}
+
+.card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__info--black {
+  color: var(--data-color-black);
+}
+
+.card__left-box, .card__right-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__right-box {
+  text-align: right;
+}
+
+.card__holder {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card__number {
+  letter-spacing: 1px;
+}
+
+.card__expiry {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+.card__date {
+  font-weight: 700;
+  letter-spacing: 2px;
 }
